@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+
+  color: #f8fafc;
+  background: #0b1512;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+
+  background: #0b1512;
+}
+
+body {
+  margin: 0;
+
+  background: #0b1512;
+  color: #f8fafc;
+}
+
+::selection {
+  background: rgba(0, 143, 131, 0.35);
+}
+
+/* ==================== VUETIFY INPUTS ==================== */
+
+.v-field--variant-solo,
+.v-field--variant-outlined {
+  background: #101d18;
+}
+
+.v-field__input,
+.v-field-label,
+.v-select__selection,
+.v-text-field input {
+  color: #f8fafc !important;
+}
+
+.v-field__outline {
+  color: #294139;
+}
+
+/* ==================== BUTTONS ==================== */
+
+.v-btn--variant-tonal {
+  background: rgba(0, 143, 131, 0.14) !important;
+  color: #35c7b8 !important;
+}
