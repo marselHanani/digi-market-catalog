@@ -1,44 +1,53 @@
 # digi-market-catalog
 
-This template should help get you started developing with Vue 3 in Vite.
+مشروع واجهة كتالوج منتجات بسيط مبني بـ Vue 3 و Vite.
 
-## Recommended IDE Setup
+Live demo (الديمو الحي):
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+https://stately-gumption-5a8934.netlify.app/
 
-## Recommended Browser Setup
+وصف سريع:
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- مشروع تعليمي/نمطي لعرض منتجات مع مكونات قابلة لإعادة الاستخدام (`ProductCard`, `CategoryCard`).
+- يستخدم Vite للبناء، وVuetify للواجهات، ويحتوي على مسارات وواجهات عرض للمنتجات.
 
-## Customize configuration
+البدء السريع (محلياً):
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+متطلبات:
 
-## Project Setup
+- Node.js (14+) وnpm
 
-```sh
+خطوات التشغيل:
+
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+بناء للنشر:
 
-```sh
+```bash
 npm run build
+npx serve dist
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+هيكل المشروع (موجز):
 
-```sh
-npm run lint
-```
+- `src/` : كود المصدر
+  - `components/` : مكونات واجهة المستخدم
+  - `views/` : صفحات/مشاهد التطبيق
+  - `data/` : بيانات اختبارات/عينة المنتجات
+- `public/` و `deploy-test/` : محتوى ثابت ونسخ للنشر
+
+المساهمة:
+
+- لإجراء تغييرات، أنشئ فرعاً جديداً، عدل، ثم ارسل Pull Request.
+
+مزيد من الموارد:
+
+- Vite: https://vitejs.dev/
+- Vue 3: https://vuejs.org/
+
+---
+
+تم التعديل بواسطة GitHub Copilot — README مرتب ومضاف له رابط الديمو الحي.
