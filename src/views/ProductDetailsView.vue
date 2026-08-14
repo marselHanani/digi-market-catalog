@@ -383,10 +383,10 @@ function addToCart() {
     return
   }
 
-  // Keep local cart state
+  // Local Pinia cart
   cartStore.addToCart(product.value)
 
-  // Send product to the Shell
+  // Notify React Shell
   window.dispatchEvent(
     new CustomEvent('catalog:add-to-cart', {
       detail: {
