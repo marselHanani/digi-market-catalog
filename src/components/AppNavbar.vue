@@ -36,13 +36,21 @@
           <v-icon icon="mdi-heart-outline" />
         </v-btn>
 
-        <v-btn icon variant="text" class="nav-action">
+        <!-- CART -->
+
+        <v-btn icon variant="text" class="nav-action" @click="openCart">
           <v-icon icon="mdi-cart-outline" />
         </v-btn>
       </div>
     </v-container>
   </v-app-bar>
 </template>
+
+<script setup>
+function openCart() {
+  window.dispatchEvent(new CustomEvent('catalog:open-cart'))
+}
+</script>
 
 <style scoped>
 .logo {
@@ -105,6 +113,8 @@
 
 .nav-action {
   color: #a5b5af;
+
+  transition: 0.2s ease;
 }
 
 .nav-action:hover {
