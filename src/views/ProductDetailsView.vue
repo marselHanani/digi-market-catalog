@@ -383,7 +383,18 @@ function addToCart() {
     return
   }
 
+  // Keep local cart state
   cartStore.addToCart(product.value)
+
+  // Send product to the Shell
+  window.dispatchEvent(
+    new CustomEvent('catalog:add-to-cart', {
+      detail: {
+        product: product.value,
+        quantity: 1,
+      },
+    }),
+  )
 }
 
 // =====================================================
