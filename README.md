@@ -49,5 +49,3 @@ npx serve dist
 - Vue 3: https://vuejs.org/
 
 ---
-
-تم التعديل بواسطة GitHub Copilot — README مرتب ومضاف له رابط الديمو الحي.
